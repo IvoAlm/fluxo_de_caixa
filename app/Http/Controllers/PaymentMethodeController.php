@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\payment_methode;
+use App\Models\Payment_method;
 use Illuminate\Http\Request;
 
 class PaymentMethodeController extends Controller
@@ -41,10 +41,10 @@ class PaymentMethodeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\payment_methode  $payment_methode
+     * @param  \App\Models\Payment_method  $payment_methode
      * @return \Illuminate\Http\Response
      */
-    public function show(payment_methode $payment_methode)
+    public function show(Payment_method $payment_methode)
     {
         //
     }
@@ -52,10 +52,10 @@ class PaymentMethodeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\payment_methode  $payment_methode
+     * @param  \App\Models\Payment_method  $payment_methode
      * @return \Illuminate\Http\Response
      */
-    public function edit(payment_methode $payment_methode)
+    public function edit(Payment_method $payment_methode)
     {
         //
     }
@@ -64,10 +64,10 @@ class PaymentMethodeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\payment_methode  $payment_methode
+     * @param  \App\Models\Payment_method  $payment_methode
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, payment_methode $payment_methode)
+    public function update(Request $request, Payment_method $payment_methode)
     {
         //
     }
@@ -75,10 +75,10 @@ class PaymentMethodeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\payment_methode  $payment_methode
+     * @param  \App\Models\Payment_method  $payment_methode
      * @return \Illuminate\Http\Response
      */
-    public function destroy(payment_methode $payment_methode)
+    public function destroy(Payment_method $payment_methode)
     {
         //
     }

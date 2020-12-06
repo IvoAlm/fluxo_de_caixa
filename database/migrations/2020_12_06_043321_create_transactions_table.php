@@ -15,6 +15,13 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->unsignedBigInteger('origin_id');
+            $table->foreignId('origin_id')->constrained('origins');
+            $table->unsignedBigInteger('payment_method_id');
+            $table->foreignId('payment_method_id')->constrained('payment_methodes');
+            $table->unsignedBigInteger('transaction_type_id');
+            $table->foreignId('transaction_type_id')->constrained('transaction_types');
             $table->timestamps();
         });
     }
