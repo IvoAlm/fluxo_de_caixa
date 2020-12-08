@@ -17,11 +17,11 @@ class CreateTransactionsTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('origin_id');
-            $table->foreignId('origin_id')->constrained('origins');
+            $table->foreign('origin_id')->references('id')->on('origins');
             $table->unsignedBigInteger('payment_method_id');
-            $table->foreignId('payment_method_id')->constrained('payment_methodes');
+            $table->foreign('payment_method_id')->references('id')->on('payment_methodes');
             $table->unsignedBigInteger('transaction_type_id');
-            $table->foreignId('transaction_type_id')->constrained('transaction_types');
+            $table->foreign('transaction_type_id')->references('id')->on('transaction_types');
             $table->timestamps();
         });
     }
